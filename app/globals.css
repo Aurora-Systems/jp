@@ -1,5 +1,6 @@
 :root{
-  --primary: #f7a84b;
+  --primary: #ee7f00;
+  --secondary:  rgb(0, 1, 19);
 }
 
 body{
@@ -12,7 +13,7 @@ body{
   overflow-x: hidden;
   margin:0px;
   padding:0px;
-  background-color: black;
+  background-color: rgb(0, 1, 19);
   perspective: 10px;
 }
 
@@ -43,13 +44,17 @@ body{
 }
 
 .tg{
-  background: -webkit-linear-gradient(#eee, var(--primary));
+  background: -webkit-linear-gradient(#fa9726, var(--primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .tp{
   color: var(--primary);
+}
+
+.ts{
+  color: var(--secondary);
 }
 
 .s_musk{
@@ -61,4 +66,8 @@ body{
   z-index: -1;
   color: white;
   z-index: 1;
+}
+
+.d_musk{
+  background-color:  rgba(0, 1, 19, 0.726);
 }
