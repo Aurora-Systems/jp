@@ -71,3 +71,25 @@ body{
 .d_musk{
   background-color:  rgba(0, 1, 19, 0.726);
 }
+
+.btn_p{
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.btn_p:hover{
+  background-color: var(--secondary);
+  color: white;
+}
+.btn_p:active{
+  background-color: var(--primary);
+  color: white;
+}
+.btn_p:focus{
+  background-color: var(--primary);
+  color: white;
+}
+
+.p_bg{
+  background-color: var(--secondary);
+}

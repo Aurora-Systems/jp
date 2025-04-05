@@ -2,8 +2,26 @@
 import Image from "next/image";
 import { BgImg } from "./components/bg_img";
 import { Fade } from "react-awesome-reveal";
+import { FormEvent, useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
 
 export default function Home() {
+  const [loading,set_loading] = useState<boolean>(false)
+  const form: any = useRef()
+  const send_application = (e: FormEvent) => {
+      e.preventDefault()
+      set_loading(true)
+      emailjs.sendForm("service_xwf6fms", "template_c4pjfnx", form.current, {
+          publicKey: "CLt7ZGjfiSQEopImB"
+      }).then(() => {
+          alert("✅ We received your enquiry, expect a call or an email soon!")
+          form.current.reset()
+      }).catch(() => {
+          alert("⚠️ Message not sent, please try again or send us a message on our email support@aurorasystems.co.zw!")
+      }).finally(()=>{
+          set_loading(false)
+      })
+  }
   return (
     <div>
       <main className="wrapper">
@@ -144,35 +162,48 @@ export default function Home() {
               <h1 className="display-1 fw-bold">Contact Us</h1>
               <p>Leave a messages and our representatives will get in touch with you asap</p>
               <div className="bg-white rounded p-3">
-                <form>
+                <form onSubmit={send_application} ref={form}>
                   <div className="row">
                     <div className="col-sm mb-3">
                         <span className="ts">Name</span>
-                        <input type="text" className="form-control" required/>
+                        <input type="text" name="name" className="form-control" required/>
                     </div>
                     <div className="col-sm mb-3">
                         <span className="ts">Email</span>
-                        <input type="email" className="form-control" required/>
+                        <input type="email" name="email" className="form-control" required/>
                     </div>
                     <div className="col-sm mb-3">
                         <span className="ts">Contact Number</span>
-                        <input type="tel" className="form-control" required/>
+                        <input type="tel" name="contact_number" className="form-control" required/>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-sm mb-3">
 
                     <span className="ts">Your Message</span>
-                    <textarea className="form-control" rows={5} placeholder="Message" required></textarea>
+                    <textarea className="form-control" name="mesage" rows={5} placeholder="Message" required></textarea>
                     </div>
 
                   </div>
                   <div>
-                    <button className="btn ">Send</button>
+                    <button type="submit" className="btn btn_p rounded-pill" disabled={loading}>{loading?"Sending":"Send"}</button>
                   </div>
                 </form>
               </div>
             </div>
+        </div>
+        <div className="text-white p-3 p_bg">
+          <footer className="text-center text-lg-start text-white">
+            <div className="d-flex flex-column justify-content-center align-items-center">
+              <Image src="https://ngratesc.sirv.com/journey_pro/JourneyPro.png" width="100" height="50" alt=""/>
+              <span><i className="bi bi-telephone"></i> +263 71 993 5235</span>
+              <span><i className="bi bi-envelope-at"></i> info@journeypro.co.zw</span>
+              <span><i className="bi bi-geo-alt"> 29 Bexcley Circle, Southerton, Harare</i></span>
+            </div>
+            <div className="text-center p-3">
+              © {new Date().getFullYear()} Journey Pro. All rights reserved.
+            </div>
+          </footer>
         </div>
         
       </main>
