@@ -7,7 +7,8 @@ import emailjs from "@emailjs/browser"
 
 export default function Home() {
   const [loading,set_loading] = useState<boolean>(false)
-  const form: any = useRef()
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const form: any = useRef(null)
   const send_application = (e: FormEvent) => {
       e.preventDefault()
       set_loading(true)
