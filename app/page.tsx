@@ -34,7 +34,7 @@ export default function Home() {
 
               <Image src="https://ngratesc.sirv.com/journey_pro/JourneyPro.png" className="img-fluid" width={200} height={300} alt="logo" />
               <p className="fs">Luxury Transport, Unmatched Comfort, Perfect Journeys </p>
-              <button className="btn btn-outline-light rounded-pill">Get Started</button>
+              <a href="#contact_us"><button className="btn btn-outline-light rounded-pill">Get Started</button></a>
               </Fade>
             </div>
 
@@ -104,9 +104,8 @@ export default function Home() {
 
             </div>
             <div className="text-center ">
-              <button className="btn btn-outline-light rounded-pill mt-5 mb-5">
-                Get Started
-              </button>
+            <a href="#contact_us"><button className="btn btn-outline-light rounded-pill">Get Started</button></a>
+
             </div>
           </div>
         </div>
@@ -158,6 +157,7 @@ export default function Home() {
           </div>
 
         </div>
+        <section id="contact_us">
         <div className="min-vh-100 d-flex justify-content-center align-items-center text-white pt-5 pb-5" style={{...BgImg("https://ngratesc.sirv.com/journey_pro/lastp.jpg"), backgroundAttachment:"fixed"}}> 
             <div className="p-5 d_musk rounded">
               <h1 className="display-1 fw-bold">Contact Us</h1>
@@ -193,6 +193,7 @@ export default function Home() {
               </div>
             </div>
         </div>
+        </section>
         <div className="text-white p-3 p_bg">
           <footer className="text-center text-lg-start text-white">
             <div className="d-flex flex-column justify-content-center align-items-center">
