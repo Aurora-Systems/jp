@@ -12,8 +12,8 @@ export default function Home() {
   const send_application = (e: FormEvent) => {
       e.preventDefault()
       set_loading(true)
-      emailjs.sendForm("service_xwf6fms", "template_c4pjfnx", form.current, {
-          publicKey: "CLt7ZGjfiSQEopImB"
+      emailjs.sendForm("service_0tlgo0j", "template_4jwndas", form.current, {
+          publicKey: "YzQ4UpG_2qLpgs1fy"
       }).then(() => {
           alert("✅ We received your enquiry, expect a call or an email soon!")
           form.current.reset()
@@ -182,7 +182,7 @@ export default function Home() {
                     <div className="col-sm mb-3">
 
                     <span className="ts">Your Message</span>
-                    <textarea className="form-control" name="mesage" rows={5} placeholder="Message" required></textarea>
+                    <textarea className="form-control" name="message" rows={5} placeholder="Message" required></textarea>
                     </div>
 
                   </div>
