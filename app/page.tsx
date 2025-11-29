@@ -26,13 +26,13 @@ export default function Home() {
   return (
     <div>
       <main className="wrapper">
-        <div className="min-vh-100 header" style={{ ...BgImg("https://ngratesc.sirv.com/journey_pro/pexels-rdne-5778604.jpg"), backgroundAttachment: "fixed" }}>
+        <div className="min-vh-100 header" style={{ ...BgImg("https://cdn.clipond.com/journey_pro/pexels-rdne-5778604.jpg"), backgroundAttachment: "fixed" }}>
 
           <div className="musk d-flex align-items-center justify-content-center">
             <div>
               <Fade cascade>
 
-              <Image src="https://ngratesc.sirv.com/journey_pro/JourneyPro.png" className="img-fluid" width={200} height={300} alt="logo" />
+              <Image src="https://cdn.clipond.com/journey_pro/JourneyPro.png" className="img-fluid" width={200} height={300} alt="logo" />
               <p className="fs">Luxury Transport, Unmatched Comfort, Perfect Journeys </p>
               <a href="#contact_us"><button className="btn btn-outline-light rounded-pill">Get Started</button></a>
               </Fade>
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="row gap-10 justify-content-center align-items-center">
               <div className="col-sm h-100 mb-3">
                 <Fade cascade direction="up">
-                <div className="rounded" style={{ ...BgImg("https://ngratesc.sirv.com/journey_pro/pexels-asadphoto-240524.jpg"), height: "30vh" }}>
+                <div className="rounded" style={{ ...BgImg("https://cdn.clipond.com/journey_pro/pexels-asadphoto-240524.jpg"), height: "30vh" }}>
 
                 </div>
                 <div style={{ height: "11vh" }}>              <h3 className="tg">Airport <br />Transfers</h3>
@@ -62,7 +62,7 @@ export default function Home() {
               <div className="col-sm mb-3">
               <Fade cascade direction="up">
 
-                <div className="rounded" style={{ ...BgImg("https://ngratesc.sirv.com/journey_pro/pexels-timcompound-575622-3608967.jpg"), height: "30vh" }}>
+                <div className="rounded" style={{ ...BgImg("https://cdn.clipond.com/journey_pro/pexels-timcompound-575622-3608967.jpg"), height: "30vh" }}>
 
                 </div>
                 <div style={{ height: "11vh" }}>              <h3 className="tg">Long-Distance Travel</h3>
@@ -76,7 +76,7 @@ export default function Home() {
               <div className="col-sm h-100 mb-3">
               <Fade cascade direction="up">
 
-                <div className="rounded" style={{ ...BgImg("https://ngratesc.sirv.com/journey_pro/pexels-rdne-5778711.jpg"), height: "30vh" }}>
+                <div className="rounded" style={{ ...BgImg("https://cdn.clipond.com/journey_pro/pexels-rdne-5778711.jpg"), height: "30vh" }}>
 
                 </div>
                 <div style={{ height: "11vh" }}>              <h3 className="tg">Corporate<br /> Transport</h3>
@@ -90,7 +90,7 @@ export default function Home() {
               <div className="col-sm mb-3">
               <Fade cascade direction="up">
 
-                <div className="rounded" style={{ ...BgImg("https://ngratesc.sirv.com/journey_pro/pexels-brennan-tolman-250017-9151813.jpg"), height: "30vh" }}>
+                <div className="rounded" style={{ ...BgImg("https://cdn.clipond.com/journey_pro/pexels-brennan-tolman-250017-9151813.jpg"), height: "30vh" }}>
 
                 </div>
                 <div style={{ height: "11vh" }}>              <h3 className="tg">Special Event Transport</h3>
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
         </div>
         <div className="min-vh-100 d-flex justify-content-center align-items-center ">
-          <div className="text-center s_musk d-flex align-items-center justify-content-center  " style={{ ...BgImg("https://ngratesc.sirv.com/journey_pro/sec.jpg"), backgroundAttachment: "fixed" }}>
+          <div className="text-center s_musk d-flex align-items-center justify-content-center  " style={{ ...BgImg("https://cdn.clipond.com/journey_pro/sec.jpg"), backgroundAttachment: "fixed" }}>
             <div className="container">
 
               <h1 className="tp display-1 fw-bold">About Us</h1>
@@ -158,7 +158,7 @@ export default function Home() {
 
         </div>
         <section id="contact_us">
-        <div className="min-vh-100 d-flex justify-content-center align-items-center text-white pt-5 pb-5" style={{...BgImg("https://ngratesc.sirv.com/journey_pro/lastp.jpg"), backgroundAttachment:"fixed"}}> 
+        <div className="min-vh-100 d-flex justify-content-center align-items-center text-white pt-5 pb-5" style={{...BgImg("https://cdn.clipond.com/journey_pro/lastp.jpg"), backgroundAttachment:"fixed"}}> 
             <div className="p-5 d_musk rounded">
               <h1 className="display-1 fw-bold">Contact Us</h1>
               <p>Leave a messages and our representatives will get in touch with you asap</p>
@@ -197,7 +197,7 @@ export default function Home() {
         <div className="text-white p-3 p_bg">
           <footer className="text-center text-lg-start text-white">
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <Image src="https://ngratesc.sirv.com/journey_pro/JourneyPro.png" width="100" height="50" alt=""/>
+              <Image src="https://cdn.clipond.com/journey_pro/JourneyPro.png" width="100" height="50" alt=""/>
               <span><i className="bi bi-telephone"></i> +263 71 993 5235</span>
               <span><i className="bi bi-envelope-at"></i> info@journeypro.co.zw</span>
               <span><i className="bi bi-geo-alt"> 29 Bexcley Circle, Southerton, Harare</i></span>
