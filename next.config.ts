@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns:[
         {
             protocol: "https",
-            hostname: "ngratesc.sirv.com",
+            hostname: "cdn.clipond.com",
             port: "",
             pathname: "/journey_pro/*"
         }
